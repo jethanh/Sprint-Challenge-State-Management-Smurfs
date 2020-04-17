@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { getSmurfs, addSmurf } from "../actions";
+import { getSmurfs } from "../actions";
 
 const SmurfList = props => {
 
@@ -39,4 +39,4 @@ const mapStateToProps = state => {
 
 }
 
-export default connect(mapStateToProps, { getSmurfs, addSmurf })(SmurfList);
+export default connect(mapStateToProps, { getSmurfs })(SmurfList);
